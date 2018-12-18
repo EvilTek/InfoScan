@@ -1,2 +1,1 @@
-# infoscan
-InfoScan Information Gathering Tool
+# InfoScan Information Gathering Tool
