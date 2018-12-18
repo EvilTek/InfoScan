@@ -14,7 +14,7 @@
 if (isset($_POST['url'])) {
     $cmd = $_POST['url'];
     echo "<pre>".shell_exec('ping -c 4 ' . escapeshellarg($cmd))."</pre>";
-    echo "<pre>".shell_exec('traceroute ' . escapeshellarg($cmd))."</pre>";
+    echo "<pre>".shell_exec('traceroute -m 15 ' . escapeshellarg($cmd))."</pre>";
     echo "<pre>".shell_exec('whois ' . escapeshellarg($cmd))."</pre>";
 }
 ?>
